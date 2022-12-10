@@ -1,53 +1,18 @@
-// function countSheeps(arrayOfSheep) {
-//   // TODO May the force be with you
-//   var num = 0;
+// Make a program that filters a list of strings and returns a list with only your friends name in it.
 
-//   for(var i = 0; i < arrayOfSheep.length; i++)
-//     if(arrayOfSheep[i] == true)
-//       num++;
+// If a name has exactly 4 letters in it, you can be sure that it has to be a friend of yours! Otherwise, you can be sure he's not...
 
-//   return num;
-// }
+// Ex: Input = ["Ryan", "Kieran", "Jason", "Yous"], Output = ["Ryan", "Yous"]
 
+// i.e.
 
+// friend ["Ryan", "Kieran", "Mark"] `shouldBe` ["Ryan", "Mark"]
+// Note: keep the original order of the names in the output.
 
-
-
-// function booleanToString(b){
-//   return b ? 'true' : 'false';
-// }
-
-
-
-
-// function updateLight(current) {
-
-//   if (current === 'green'){
-//     current = 'yellow'
-//   } else if (current === 'yellow') {
-//     current = 'red'
-//   } else if (current === 'red') {
-//     current = 'green'
-//   } else {}
-
-// return current
-
-
-// }
-
-
-
-function strCount(str, letter) {
-
-  let count = 0;
-
-  for (let i = 0; i < str.length; i++) {
-    if (str[i] == letter)
-      count++;
-  }
-
-  return count;
-
+function friend(friends){
+  return friends.filter(n => n.length === 4)
 }
 
-//this shit is fucking hard 
+
+
+
