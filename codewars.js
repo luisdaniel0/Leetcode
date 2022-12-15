@@ -9,8 +9,8 @@
 // friend ["Ryan", "Kieran", "Mark"] `shouldBe` ["Ryan", "Mark"]
 // Note: keep the original order of the names in the output.
 
-function friend(friends){
-  return friends.filter(n => n.length === 4)
+function friend(friendArray){
+  return friendArray.filter(friend => friend.length === 4)
 }
 
 
@@ -30,3 +30,8 @@ const sequenceSum = (begin, end, step) => {
   }
   return sum;
 };
+
+function friend(friendArray){
+  return friendArray.filter(friend => friend.length === 4)
+}
+
