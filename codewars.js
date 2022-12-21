@@ -9,7 +9,14 @@
 // friend ["Ryan", "Kieran", "Mark"] `shouldBe` ["Ryan", "Mark"]
 // Note: keep the original order of the names in the output.
 
-function friend(friendArray){
+function friends(friendArray) {
+  return friendArray.filter(friend => friend.length === 4);
+}
+
+
+
+
+function friends(friendArray){
   return friendArray.filter(friend => friend.length === 4)
 }
 
