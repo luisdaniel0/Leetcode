@@ -12,6 +12,9 @@
 function friends(friendArray) {
   return friendArray.filter(friend => friend.length === 4);
 }
+function friends(array) {
+  return array.filter(friend=>friend.length===4)
+}
 
 
 
