@@ -89,5 +89,6 @@ let twoSum = function (nums, target) {
     }
   }
 }
-
-console.log(123)
+let arr = [2, 4, 6]
+let number = 8
+console.log(twoSum(arr, number));
