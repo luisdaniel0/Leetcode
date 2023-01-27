@@ -89,3 +89,4 @@ let twoSum = function (nums, target) {
     }
   }
 }
+console.log(123)
