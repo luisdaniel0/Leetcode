@@ -80,15 +80,17 @@ Constraints:
 Only one valid answer exists.
 */
 
-let twoSum = function (nums, target) {
+const twoSum = function(nums, target) {
+  const hashtable = new Map();
   for (let i = 0; i < nums.length; i++) {
-    for (let j = i + 1; j < nums.length; j++) {
-      if (nums[i] + nums[j] === target) {
-        return [i, j]
+      let num1 = nums[i];
+      let num2= target - num1;
+      if(hashtable.has(num2)){
+          return [i,hashtable.get(num2)];
       }
-    }
-  }
+      hashtable.set(num1,i);
+   }
 }
-let arr = [2, 4, 6]
-let number = 8
-console.log(twoSum(arr, number));
+let nums = [2, 4, 6]
+let target = 6
+console.log(twoSum(nums, target));
