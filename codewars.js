@@ -3,6 +3,11 @@
 // // If a name has exactly 4 letters in it, you can be sure that it has to be a friend of yours! Otherwise, you can be sure he's not...
 
 // // Ex: Input = ["Ryan", "Kieran", "Jason", "Yous"], Output = ["Ryan", "Yous"]
+
+const friendsList = (arr) => {
+  return arr.filter(friends => friends.length === 4);
+}
+
 // function friends(arr) {
 //   return arr.filter(friend => friend.length == 4);
 // }
@@ -80,17 +85,36 @@ Constraints:
 Only one valid answer exists.
 */
 
-const twoSum = function(nums, target) {
-  const hashtable = new Map();
-  for (let i = 0; i < nums.length; i++) {
-      let num1 = nums[i];
-      let num2= target - num1;
-      if(hashtable.has(num2)){
-          return [i,hashtable.get(num2)];
-      }
-      hashtable.set(num1,i);
-   }
+// const twoSum = function (nums, target) {
+//   const hashtable = new Map();
+//   for (let i = 0; i < nums.length; i++) {
+//     let num1 = nums[i];
+//     let num2 = target - num1;
+//     if (hashtable.has(num2)) {
+//       return [i, hashtable.get(num2)];
+//     }
+//     hashtable.set(num1, i);
+//   }
+// }
+
+
+
+const twoSum = (nums, target) => {
+  const hashmap = new Map();
+  for (let i = 0; i < nums.length; i++){
+    let nums1 = nums[i];
+    let nums2 = target - nums1;
+    if (hashmap.has(nums2)) {
+      return [i, hashmap.get(nums2)];
+    }
+    hashmap.set(nums1,i)
+  }
 }
+
 let nums = [2, 4, 6]
 let target = 6
 console.log(twoSum(nums, target));
+
+
+
+
