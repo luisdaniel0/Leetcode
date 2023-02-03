@@ -8,6 +8,8 @@ const friendsList = (arr) => {
   return arr.filter(friends => friends.length === 4);
 }
 
+
+
 // function friends(arr) {
 //   return arr.filter(friend => friend.length == 4);
 // }
@@ -111,8 +113,8 @@ const twoSum = (nums, target) => {
   }
 }
 
-let nums = [2, 4, 6]
-let target = 6
+let nums = [2,7,9,8,6,5,3]
+let target = 9
 console.log(twoSum(nums, target));
 
 
