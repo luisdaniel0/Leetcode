@@ -118,39 +118,6 @@ let target = 10
 console.log(twoSum(nums, target));
 
 
-const twoSum = (nums, target) => {
-  const hashmap = new Map();
-  for (let i = 0; i < nums.length; i++){
-    let nums1 = nums[i];
-    let nums2 = target - nums1;
-    if (hashmap.has(nums2)) {
-      return [i, hashmap.get(nums2)];
-    }
-    hashmap.set(nums1,i)
-  }
-}
-
-let nums = [2,7,9,8,6,5,3]
-let target = 10
-console.log(twoSum(nums, target));
-
-
-const twoSum = (nums, target) => {
-  const hashmap = new Map();
-  for (let i = 0; i < nums.length; i++){
-    let nums1 = nums[i];
-    let nums2 = target - nums1;
-    if (hashmap.has(nums2)) {
-      return [i, hashmap.get(nums2)];
-    }
-    hashmap.set(nums1,i)
-  }
-}
-
-let nums = [2,7,9,8,6,5,3]
-let target = 10
-console.log(twoSum(nums, target));
-
 
 
 
