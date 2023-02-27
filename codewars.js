@@ -116,6 +116,9 @@ const twoSum = (nums, target) => {
 let nums = [2,7,9,8,6,5,3]
 let target = 10
 console.log(twoSum(nums, target));
+let nums = [2,7,9,8,6,5,3]
+let target = 10
+console.log(twoSum(nums, target));
 
 
 
