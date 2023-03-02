@@ -100,23 +100,23 @@ Only one valid answer exists.
 // }
 
 
-
-const twoSum = (nums, target) => {
-  const hashmap = new Map();
-  for (let i = 0; i < nums.length; i++) {
-    let nums1 = nums[i];
-    let nums2 = target - nums1;
-    if (hashmap.has(nums2)) {
-      return [i, hashmap.get(nums2)];
+const twoSum =(nums,target)=>{
+  let map = new Map();
+  for(let i =0;i<nums.length;i++){
+    let num1=nums[i];
+    let num2=target - num1
+    if(map.has(num2)){
+      return [i,map.get(num2)]
     }
-    hashmap.set(nums1, i)
+    map.set(num1,i)
   }
 }
 
-let nums = [2, 7, 9, 8, 6, 5, 3]
-let target = 10
-console.log(twoSum(nums, target));
-console.log(123);
+let array = [2, 7, 9, 8, 6, 5, 3]
+let targetNumer = 10
+
+console.log(twoSum(array,targetNumer))
+
 
 
 
