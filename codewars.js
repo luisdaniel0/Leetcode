@@ -116,6 +116,7 @@ let array = [2, 7, 9, 8, 6, 5, 3]
 let targetNumer = 10
 
 console.log(twoSum(array,targetNumer))
+console.log(123);
 
 
 
