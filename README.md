@@ -1,1 +1,1 @@
-# codewards-leetcode
+ A repo to store all of my practice coding problems I solve from codewars/leetcode 
