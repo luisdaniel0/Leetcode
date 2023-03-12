@@ -3,3 +3,4 @@ function high(s) {
   );
   return s.split(' ')[word.indexOf(Math.max(...word))];
 }
+
