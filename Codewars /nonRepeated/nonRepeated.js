@@ -1,7 +1,9 @@
 function firstNonRepeatingLetter(s) {
-  var t=s.toLowerCase();
-  for (var x=0;x<t.length;x++)
-    if(t.indexOf(t[x]) === t.lastIndexOf(t[x]))
-      return s[x];
+  let str = s.toLowerCase();
+  for(let i = 0; i < str.length; i++) {
+    if(str.indexOf(str[i]) === str.lastIndexOf(str[i])) {
+      return s[i];
+    }
+  }
   return "";
 }
